@@ -1,6 +1,6 @@
 {
   "name": "frame-draft",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A very small bootstrap for game development in js",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
