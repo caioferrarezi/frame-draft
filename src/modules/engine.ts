@@ -29,7 +29,7 @@ export class Engine {
     this.elapsedTime = timestamp - this.oldTimestamp
     this.oldTimestamp = timestamp
 
-    this.callback(this.elapsedTime)
+    this.callback(this.elapsedTime / 1000)
 
     this.requestedFrame = requestAnimationFrame(this.loop.bind(this))
   }
