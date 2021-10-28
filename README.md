@@ -32,6 +32,10 @@ const update = () => {
   if (keyboard.isDown('ArrowUp')) {
     // Do some control actions
   }
+
+  if (keyboard.isHeld('ArrowUp')) {
+    // Do some control actions once when the key is been held
+  }
 }
 
 const render = () => {
@@ -45,7 +49,7 @@ keyboard.onKeyPress(key => {
   // Do anything on key press
 })
 
-engine.start(() => {
+engine.start(elapsedTime => {
   update()
   render()
 })
